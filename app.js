@@ -1,21 +1,15 @@
-var person = new Object();
+var objectLiteral = {
+    firstname: 'Jason',
+    isAProgramer: true
 
-person["firstname"] = "Tony";
-person["lastname"] = "Alicea";
+}
 
-var firstNameProperty = "firstname";
 
-console.log(person);
-console.log(person[firstNameProperty]);
+console.log(JSON.stringify(objectLiteral));
 
-console.log(person.firstname);
-console.log(person.lastname);
 
-person.address = new Object();
-person.address.street = "111 Main St.";
-person.address.city = "New York";
-person.address.state = "NY";
 
-console.log(person.address.street);
-console.log(person.address.city);
-console.log(person["address"]["state"]);
+var jsonValue = JSON.parse('{ "firstname": "Jason", "isAProgrammer": true}');
+
+
+console.log(jsonValue);
