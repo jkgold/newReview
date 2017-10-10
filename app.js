@@ -1,19 +1,35 @@
-var arr = [
-    1,
-    false,
-    {
-        name: 'Jason',
-        address: '345 main'
-    },
-    function (name) {
-        var greeting = 'Hello ';
-        console.log(greeting + name);
-    },
-    'hello'
-];
+function greet(firstname, lastname, language) {
 
-console.log(arr);
-arr[3](arr[2].name);
+    language = language || 'en';
+
+    console.log(firstname);
+    console.log(lastname);
+    console.log(language);
+    console.log('---------');
+}
+
+greet();
+greet('Jason');
+greet('Jason', 'Goldfarb');
+greet('Jason', 'Goldfarb', 'es');
+
+
+// var arr = [
+//     1,
+//     false,
+//     {
+//         name: 'Jason',
+//         address: '345 main'
+//     },
+//     function (name) {
+//         var greeting = 'Hello ';
+//         console.log(greeting + name);
+//     },
+//     'hello'
+// ];
+//
+// console.log(arr);
+// arr[3](arr[2].name);
 
 // greet();
 //
